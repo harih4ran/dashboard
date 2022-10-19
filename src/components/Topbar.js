@@ -5,15 +5,15 @@ function Topbar() {
     <div>
       <div className="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
         <div className="px-6 flex items-center justify-between space-x-4 2xl:container">
-          <div className="lg:block">
+          <div className="hidden lg:block">
             <div className="flex">
-              <div className="text-lg text-gray-600 font-medium px-2">
+              <div className="text-md text-gray-600 font-medium px-2 hidden lg:block">
                 Employee View
               </div>
-              <div className="text-lg text-gray-600 font-medium px-2">
+              <div className="text-md text-gray-600 font-medium px-2 hidden lg:block">
                 System Control
               </div>
-              <div className="text-lg text-blue-600 font-medium px-2">
+              <div className="text-md text-blue-600 font-medium px-2 hidden lg:block">
                 Admin
               </div>
             </div>
@@ -21,7 +21,7 @@ function Topbar() {
           <button className="w-12 h-16 -mr-2 border-r lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 my-auto"
+              className="h-5 w-5 my-auto text-gray-600"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -35,22 +35,7 @@ function Topbar() {
             </svg>
           </button>
           <div className="flex space-x-4">
-            <button
-              aria-label="search"
-              className="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200 md:hidden"
-            >
-              <svg
-                xmlns="http://ww50w3.org/2000/svg"
-                className="w-4 mx-auto fill-current text-gray-600"
-                viewBox="0 0 35.997 36.004"
-              >
-                <path
-                  id="Icon_awesome-search"
-                  data-name="search"
-                  d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z"
-                ></path>
-              </svg>
-            </button>
+          
             <button aria-label="chat" className="w-10 h-10 rounded-full border">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +62,7 @@ function Topbar() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                class="w-5 h-5 m-auto"
+                className="h-5 w-5 m-auto text-gray-600"
               >
                 <path
                   strokeLinecap="round"

@@ -5,15 +5,19 @@ function Topbar() {
     <div>
       <div className="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
         <div className="px-6 flex items-center justify-between space-x-4 2xl:container">
-          <h5 hidden className="text-lg text-gray-600 font-medium lg:block">
-            Employee View
-          </h5>
-          <h5 hidden className="text-lg text-gray-600 font-medium lg:block">
-            System Control
-          </h5>
-          <h5 hidden className="text-lg text-gray-600 font-medium lg:block">
-            Admin
-          </h5>
+          <div className="lg:block">
+            <div className="flex">
+              <div className="text-lg text-gray-600 font-medium px-2">
+                Employee View
+              </div>
+              <div className="text-lg text-gray-600 font-medium px-2">
+                System Control
+              </div>
+              <div className="text-lg text-blue-600 font-medium px-2">
+                Admin
+              </div>
+            </div>
+          </div>
           <button className="w-12 h-16 -mr-2 border-r lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +80,8 @@ function Topbar() {
                 class="w-5 h-5 m-auto"
               >
                 <path
-                 strokeLinecap="round"
-                 strokeLinejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
                 />
               </svg>
